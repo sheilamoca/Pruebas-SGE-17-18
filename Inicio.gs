@@ -25,4 +25,9 @@ function menuItem2(){
   var name= SpreadsheetApp.getActive().getName();
   //Mostramos la variable en el log
   Logger.log("Nombre de la HCG " + name);
+  
+  //Obtenemos el nombre de la segunda Hoja por su ID
+  var name2= SpreadsheetApp.openById('1DgqEhXnOzgQDTIPBKEPL7wq8UgLnmESUPVRvL7BB7T4').getName();
+  //Mostramos el nombre de la otra Hoja de calculo
+  Logger.log("Nombre de la HCG segunda " + name2)
 }
